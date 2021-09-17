@@ -7,7 +7,7 @@ Utilizing a third-party Weather API to fetch weather data of a specific city, ei
 `FOR PRACTICE PURPOSE ONLY`
 
 ## SIMPLE USAGE
-1. Type the name of the city (e.g Toronto)
+1. Type the name of the city (e.g Toronto) (No need to care about case-sensitivity)
 2. Choose the temperature units (default is Celcius or °C)
 3. Press Enter
 
