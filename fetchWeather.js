@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_API_KEY'
+const API_KEY = '292fbdae77df1994e81632df4ddcda01'
 
 const fetchWeather = async (city, units) => {
     const baseUrl = 'https://api.openweathermap.org/data/2.5/weather'

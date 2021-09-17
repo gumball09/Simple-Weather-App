@@ -14,7 +14,7 @@ form.addEventListener('submit', async (event) => {
     if(!data) {
         formError("City not found!")
     } else {
-        updateForm(data, units.value)
+        updateForm(data, units)
     }
 
     form.reset() // clears the form value
