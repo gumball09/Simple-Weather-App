@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+body {
+    background-color:white;
+    box-sizing: border-box !important;
+}
+
+.form > h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 50px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #086482
+}
+
+form input {
+    padding: 5px; 
+    font-size: 15px;
+    background-color: white;
+    opacity: 80%;
+    border: none;
+    padding: 5px 30px 5px 20px;
+    border-radius: 0.3em;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.1);
+}
+
+form input:focus {
+    outline: none;
+    background-color: rgba(255,255,255, 1.0);
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+}
+
+input[type="radio"] ~ label {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.cardContainer {
+    height: 100%;
+    width: 50vh;
+    margin: 50px auto 0 auto;
+}
+
+.card {
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 10px; ;
+    padding: 50px 0 50px 0;
+    background-color: #FCE1BB;
+    z-index: 1;
+}
+
+#city-name {
+    font-family: 'Prata', serif;
+}
+
+#country {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #325E88;
+}
+
+.card-body {
+    padding-top: 50px;
+}
+
+span.avg-temp {
+    padding-top: 40px
+}
+
+span#avg-temp {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    color: #325E88;
+}
+
+img {
+    padding-top: 20px;
+    transform: scale(1.5);
+    filter: grayscale(0);
+    filter: contrast(95%);
+    filter: brightness(-1.5)
+}
+
+
+#condition {
+    font-family: 'Gilda Display', serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 20px;
+    color: #325E88;
+}
+
+#max-temp, #min-temp {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px
+}
+
+/* CSS */
+#city-name {
+    color: #325E88;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#city-name:after {
+    content: "";
+    /*background-color: #FDB181 !important;*/
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+/*
+#city-name:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  #city-name {
+    padding: 13px 50px 13px;
+  }
+}
+*/
+
+.card-bottom {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: none;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.card-bottom p {
+    border-bottom: 1px solid black;
+}
+
+.card-bottom span {
+    font-weight: 500;
+    color: #325E88;
+}
+
+.curve-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve-up svg {
+    position: relative;
+    display: block;
+    width: calc(173% + 1.3px);
+    height: 54px;
+}
+
+.curve-up .shape-fill {
+    fill: #086482
+}
+
+.curve-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curve-down svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 202px;
+}
+
+.curve-down .shape-fill {
+    fill: #086482
+}
